@@ -1,6 +1,7 @@
 import {createContext, useReducer} from "react";
 import googleAppsReducer from "./GoogleAppsReducer";
 import all_apps from '../../mocks/all_apps';
+import booking_app_metadata from '../../mocks/booking_app_metadata';
 
 const GoogleAppsContext = createContext()
 
@@ -28,23 +29,28 @@ export const AppsProvider = ({children}) => {
 
     const getApp = async (name) => {
         setLoading()
-        const package_name = name.split('.')[1]
+
+        dispatch({
+            type: 'GET_APP_DETAILS',
+            payload: booking_app_metadata
+        })
+
+        // const package_name = name.split('.')[1]
+        //
+        // const response = await fetch(`${GOOGLE_APP_URL}/${package_name}_app.metadata.json`)
+
+        // if (response.status === 404) {
+        //     window.localation = '/notfound'
+        // } else {
+        //
+        //     const data = await response.json()
+        //
+        //     dispatch({
+        //         type: 'GET_APP',
+        //         payload: data
+        //     })
+        // }
         
-        const response = await fetch(`${GOOGLE_APP_URL}/${package_name}_app.metadata.json`)
-
-        if (response.status === 404) {
-            window.localation = '/notfound'
-        } else {
-
-            const data = await response.json()
-
-            dispatch({
-                type: 'GET_APP',
-                payload: data
-            })
-        }
-
-
     }
 
 
@@ -53,7 +59,7 @@ export const AppsProvider = ({children}) => {
     return <GoogleAppsContext.Provider value={{
         apps: all_apps,
         loading: state.loading,
-        app: state.app,
+        app: booking_app_metadata,
         fetchApps,
         getApp
 

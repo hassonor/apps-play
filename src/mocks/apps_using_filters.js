@@ -1,5 +1,6 @@
 const app_using_filters = [
     {
+        id: 1,
         "name": "com.booking",
         "icon": "https://play-lh.googleusercontent.com/muSOyE55_Ra26XXx2IiGYqXduq7RchMhosFlWGc7wCS4I1iQXb7BAnnjEYzqcUYa5oo",
         "genre": "Maps & Navigation",
@@ -8,6 +9,7 @@ const app_using_filters = [
         "title": "Booking.com: Hotels and more"
     },
     {
+        id: 3,
         "name": "com.facebook.katana",
         "icon": "https://play-lh.googleusercontent.com/ccWDU4A7fX1R24v-vvT480ySh26AYp97g1VrIB_FIdjRcuQB2JP2WdY7h_wVVAeSpg",
         "genre": "Social",
@@ -16,6 +18,7 @@ const app_using_filters = [
         "title": "Facebook"
     },
     {
+        id: 4,
         "name": "com.igg.android.mobileroyale",
         "icon": "https://play-lh.googleusercontent.com/zLCtdOT-jJap2RchrrkRI1eIx-JOBANKc1udCpD8EmYw5AwTf_6eB-ylbMY0yhPVvOI",
         "genre": "Strategy",
@@ -24,6 +27,7 @@ const app_using_filters = [
         "title": "Mobile Royale MMORPG - Build a Strategy for Battle"
     },
     {
+        id: 6,
         "name": "com.snapchat.android",
         "icon": "https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo",
         "genre": "Social",
@@ -32,6 +36,7 @@ const app_using_filters = [
         "title": "Snapchat"
     },
     {
+        id: 7,
         "name": "com.waze",
         "icon": "https://play-lh.googleusercontent.com/muSOyE55_Ra26XXx2IiGYqXduq7RchMhosFlWGc7wCS4I1iQXb7BAnnjEYzqcUYa5oo",
         "genre": "Maps & Navigation",
@@ -40,6 +45,7 @@ const app_using_filters = [
         "title": "Waze - GPS, Maps, Traffic Alerts & Live Navigation"
     },
     {
+        id: 8,
         "name": "com.wolt.android",
         "icon": "https://play-lh.googleusercontent.com/qp3dvrnvMAYmJj6ok1AtYJdCP0l4BD_PnyEpXde3nPeufoOc7WH_hIzIlIKVEjYdEAtq",
         "genre": "Food & Drink",

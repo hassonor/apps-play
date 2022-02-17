@@ -1,0 +1,43 @@
+const app_meta_data = {
+    "title": "Booking.com: Hotels and more",
+    "description": "Save on your next trip with the Booking.com app! Find great hotel or apartment deals and book in just a few minutes. You can also book flights, rental cars, and more through the app.\r\n\r\n- Book your whole trip in one app (accommodations, flights, car rentals, taxis and more)\r\n- Stay flexible with free cancellation (available at most properties)\r\n- 24/7 customer service in more than 40 languages\r\n- No booking or credit card fees\r\n- Chat directly with your property in the app\r\n- Enjoy mobile-only discounts\r\n- Use filters to easily find the perfect place out of millions of available accommodations (hotels, apartments, homes, villas, ryokai and more)\r\n- Get paperless confirmation of your reservation — no printing required\r\n- Manage your bookings on the go, making changes whenever and wherever you want\r\n- Discover local attractions and make the most of your trip\r\n- Share your experience and get local advice on our Travel Communities forums\r\n\r\nAccess millions of accommodations \r\nFrom cozy country homes to funky city apartments, find the perfect place out of millions of available accommodations. Our app offers hotels, apartments, hostels, vacation rentals, resorts, motels, guest houses, and bed and breakfasts\r\n\r\nQuickly find the perfect place to stay\r\nFilter hotels by price, review score, WiFi quality, and other things important to you. Search cheap hotels by city, attraction, landmark, or hotel name. Special requests? Pet-friendly hotels? We have filters for everything. You can also compare your favorite accommodation options side by side to ensure you get the best price and quality.\r\n\r\nDeals for any budget\r\nDiscover daily accommodation deals and save on your next hotel, apartment, or villa booking. \r\nGet exclusive mobile-only discounts of 10% or more on select properties when you book in the app. Savings available on motels and hostels, B&Bs and resorts, and luxury hotels, inns, homes, houses, apartments and vacation rentals. Find your ideal accommodation at an ideal price. \r\n\r\nStay flexible with free cancellation\r\nChange of plans? Not a problem. You can cancel for free at most hotels, apartments and other properties on Booking.com. And the app makes things even easier — it only takes a few taps to cancel, and you’re free to find a place that better suits your needs. \r\n\r\nLast-minute travel\r\nHeading somewhere in a hurry? With the app, you can quickly book hotels at the last minute (as well as far in advance).  Finding a place in short order has never been easier. Our app allows you to search for properties nearby, fill in a few details, and secure your reservation. You can also change, cancel, or make additional reservations on the go.\r\n\r\nJet off with the perfect flight\r\nBook domestic or international flights on the go with ease. The app allows you to search thousands of airfare deals per day. Plane tickets available for all major airlines and destinations.\r\n\r\nHit the road with car rentals\r\nCar hire has recently been added to the app. Whether you just need a ride to explore your destination, or you’re going on an epic road trip, the Booking.com app can help. Rent a car from all the major companies and hit the road!\r\n\r\nReserve taxis with ease\r\nBook in advance for a seamless connection from the airport to your destination. You can also book taxis to and from other pick-up points, such as hotels and local attractions.\r\n\r\nFind and book a great experience\r\nWhether you’re looking for attraction or museum tickets, culinary tours, or helicopter rides, you can book experiences online in minutes, with free cancellation on many options. \r\n\r\nGet and share tips with other travelers\r\nConnect with fellow travelers, share your experiences, and get local advice on the best accommodations, attractions, and more. Discover new experiences with our app, the perfect trip planner.",
+    "summary": "Stay flexible with free cancellation.",
+    "installs": "100,000,000+",
+    "minInstalls": 100000000,
+    "maxInstalls": 440317442,
+    "score": 4.678387,
+    "scoreText": "4.7",
+    "ratings": 3111061,
+    "reviews": 1021783,
+    "price": 0,
+    "free": true,
+    "currency": "USD",
+    "priceText": "Free",
+    "available": true,
+    "offersIAP": false,
+    "size": "Varies with device",
+    "androidVersion": "VARY",
+    "developer": "Booking.com Hotels & Vacation Rentals",
+    "developerEmail": "customer.service@booking.com",
+    "developerWebsite": "http://www.booking.com/apps.html?source=googleplay",
+    "genre": "Travel & Local",
+    "icon": "https://play-lh.googleusercontent.com/eJuvWSnbPwEWAQCYwl8i9nPJXRzTv94JSYGGrKIu0qeuG_5wgYtb982-2F_jOGtIytY",
+    "headerImage": "https://play-lh.googleusercontent.com/hlR2Yjt1QpKswTzZ3MTjOXvIXsQaZm7Yp1nUompK9lg955KTKB2idp0JeZhVPh0SJOs",
+    "screenshots": [
+        "https://play-lh.googleusercontent.com/EL9VBiuNw5q3Vg0dOkZqRzyCWtxETCnPdBH1zFT9-Xp8MdOq-LGiykdA9rjduNtzyqo",
+        "https://play-lh.googleusercontent.com/ggqGHBlkkLv0OvaSHVkSWj_fDf0AzPXWHfk116InH8qhxH3KxFXwRTZKGtSvciJq8g",
+        "https://play-lh.googleusercontent.com/gPAs3DiDWNC7vHlhHZISi6aLrFWLuaut22NRQH5N7tPVQ7QEb7_eThez3PBQg0aKjqA",
+        "https://play-lh.googleusercontent.com/3V9cpgumUZ8hd3R6SXSDD3pjt3ffhJOCRkFUI2MQSKGVUmhjdvKWQYOXb2iwlltTHE8",
+        "https://play-lh.googleusercontent.com/n1Rn9hGIcmmbCnfP9clyOAOnELb6T5aFUxWT-dZ6mmG9O8l9DPz_LTSh3HNjzFzI4Q",
+        "https://play-lh.googleusercontent.com/9OHjmlqtlv3rxISPHWuytGI2s7hYglNJbl6SIpJETZoXobwQZQK2DsFYaQqot1nxqw8",
+        "https://play-lh.googleusercontent.com/jksbAjtFERn1zTQHR6RoXKzeQGzDEW3_lr17TaKjFbc2cLSvBDaer1da_ctaizu54Ws",
+        "https://play-lh.googleusercontent.com/f7p7kffzC4C9wXbqiOtP3onDvNzChfrPsCYcyFOZYwey_yPusvp_3IeBGPJyGwBSBj0",
+        "https://play-lh.googleusercontent.com/ZY8bO0gnOMbqmrxPNmT47oo3T-DwNUepiPG9LfaosnhoB3gK-7B57aDB9QBDMcF6sTg",
+        "https://play-lh.googleusercontent.com/emYgpgIPxwxl1S0BQ5pto6zTI3IDHB7-vkZTx946HhSrIhytKdkOgTEm4dvi6Arh4Q"
+    ],
+    "version": "Varies with device",
+    "appId": "com.booking",
+    "url": "https://play.google.com/store/apps/details?id=com.booking&hl=en&gl=us"
+}
+
+export default app_meta_data

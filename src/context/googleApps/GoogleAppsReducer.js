@@ -6,7 +6,7 @@ const googleAppsReducer = (state, action) => {
                 apps: action.payload,
                 loading: false
             }
-        case 'GET_APP':
+        case 'GET_APP_DETAILS':
             return {
                 ...state,
                 user: action.payload,
