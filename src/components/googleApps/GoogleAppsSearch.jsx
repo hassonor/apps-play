@@ -47,6 +47,7 @@ function GoogleAppsSearch() {
             <div>
                 <button
                     onClick={fetchApps}
+                    data-cy="btn-ghost"
                     className="btn btn-ghost btn-lg">
                     All Apps
                 </button>

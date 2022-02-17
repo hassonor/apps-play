@@ -46,3 +46,63 @@ describe("Test Searching ", () => {
 
 })
 
+
+describe("Test Buttons and Navigation ", () => {
+    it("Searching + Restore to Default", () => {
+        cy.visit("http://localhost:3000");
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.get('[data-cy=btn-ghost]').click({force: true});
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.get('[placeholder=Search]').type("Facebook");
+        cy.get('[data-cy=find]').click({force: true});
+        cy.get('h2').should('have.text', 'Facebook')
+
+        cy.get('[data-cy=btn-ghost]').click({force: true});
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+
+    });
+
+    it("Navigation Test 1", () => {
+        cy.visit("http://localhost:3000");
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.get('[data-cy=about-us-link]').click({force: true});
+        cy.url().should('eq', 'http://localhost:3000/about')
+
+        cy.get('[data-cy=home-link]').click({force: true});
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.url().should('eq', 'http://localhost:3000/')
+
+    });
+
+    it("Navigation Test 2", () => {
+        cy.visit("http://localhost:3000");
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.get('[data-cy=about-us-link]').click({force: true});
+        cy.url().should('eq', 'http://localhost:3000/about')
+
+        cy.get('[data-cy=home-link]').click({force: true});
+        cy.get('.list-of-items').find('h2').should(($listOfElements) => {
+            expect($listOfElements).to.have.length(10)
+        })
+        cy.url().should('eq', 'http://localhost:3000/')
+
+    });
+
+
+})
+
+
+
+
