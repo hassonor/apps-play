@@ -12,6 +12,7 @@ export const AppsProvider = ({children}) => {
     const initialState = {
         apps: [],
         app: {},
+        app_searched: [],
         loading: false
     }
 
@@ -20,9 +21,21 @@ export const AppsProvider = ({children}) => {
 
     const fetchApps = () => {
         setLoading()
+        const data = all_apps
         dispatch({
             type: 'GET_APPS',
-            payload: all_apps
+            payload: data
+        })
+    }
+
+    const searchApps = async (text) => {
+        setLoading()
+
+        const items = all_apps.filter(x => x.title.toLowerCase().includes(text.toLowerCase()))
+
+        dispatch({
+            type: 'GET_APP_WITH_SEARCH',
+            payload: items
         })
     }
 
@@ -35,6 +48,7 @@ export const AppsProvider = ({children}) => {
             payload: booking_app_metadata
         })
 
+        // With API:
         // const package_name = name.split('.')[1]
         //
         // const response = await fetch(`${GOOGLE_APP_URL}/${package_name}_app.metadata.json`)
@@ -50,18 +64,19 @@ export const AppsProvider = ({children}) => {
         //         payload: data
         //     })
         // }
-        
+
     }
 
 
     const setLoading = () => dispatch({type: 'SET_LOADING'})
 
     return <GoogleAppsContext.Provider value={{
-        apps: all_apps,
+        apps: state.apps,
         loading: state.loading,
         app: booking_app_metadata,
         fetchApps,
-        getApp
+        getApp,
+        searchApps
 
     }}>
         {children}
