@@ -47,7 +47,7 @@ function GoogleAppsSearch() {
                 <button
                     onClick={fetchApps}
                     className="btn btn-ghost btn-lg">
-                    Clear
+                    All Apps
                 </button>
             </div>)}
         </div>

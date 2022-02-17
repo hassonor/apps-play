@@ -17,7 +17,7 @@ function AppDetails() {
     useEffect(() => {
 
         getApp(params.name)
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const {
         title,

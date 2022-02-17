@@ -5,7 +5,7 @@ import Swipe from "react-easy-swipe";
 function Carousel({app}) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [paused, setPaused] = useState(false)
+    const [, setPaused] = useState(false)
 
 
     const nextSlide = () => {
