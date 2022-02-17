@@ -4,7 +4,7 @@ import AlertContext from "../../context/alert/AlertContext";
 
 function GoogleAppsSearch() {
     const [text, setText] = useState('')
-    const {all_apps, searchApps, fetchApps} = useContext(GoogleAppsContext);
+    const {apps, searchApps, fetchApps} = useContext(GoogleAppsContext);
 
     const {setAlert} = useContext(AlertContext);
 
@@ -43,13 +43,13 @@ function GoogleAppsSearch() {
                     </div>
                 </div>
             </form>
-            {/*{all_apps.length > 0 && (<div>*/}
-            {/*    <button*/}
-            {/*        onClick={fetchApps}*/}
-            {/*        className="btn btn-ghost btn-lg">*/}
-            {/*        Clear*/}
-            {/*    </button>*/}
-            {/*</div>)}*/}
+            {apps.length > 0 && (<div>
+                <button
+                    onClick={fetchApps}
+                    className="btn btn-ghost btn-lg">
+                    Clear
+                </button>
+            </div>)}
         </div>
 
 

@@ -7,7 +7,7 @@ import NotFound404 from "./pages/NotFound404";
 import {AppsProvider} from "./context/googleApps/GoogleAppsContext";
 import {AlertProvider} from "./context/alert/AlertContext";
 import Alert from "./components/layout/Alert";
-
+import AppDetails from "./pages/AppDetails";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
                             <Routes>
                                 <Route path='/' element={<Home/>}/>
                                 <Route path='/about' element={<About/>}/>
-                                {/*<Route path='/app/:id' element={<App/>}/>*/}
+                                <Route path='/app/:name' element={<AppDetails/>}/>
                                 <Route path='/notfound' element={<NotFound404/>}/>
                                 <Route path='/*' element={<NotFound404/>}/>
                             </Routes>

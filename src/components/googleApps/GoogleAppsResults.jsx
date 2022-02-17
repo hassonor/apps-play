@@ -5,13 +5,13 @@ import GoogleAppsContext from "../../context/googleApps/GoogleAppsContext";
 
 
 function GoogleAppsResults() {
-    const {apps, loading} = useContext(GoogleAppsContext)
+    const {apps, loading, fetchApps} = useContext(GoogleAppsContext)
 
-    // useEffect(() => {
-    //
-    //     fetchUsers()
-    // }, []) // eslint-disable-line react-hooks/exhaustive-deps
-    //
+    useEffect(() => {
+
+        fetchApps()
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
 
     if (!loading) {
         return (<div className='grid grid-cols-1 gap-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2'>

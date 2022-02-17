@@ -1,5 +1,11 @@
 const googleAppsReducer = (state, action) => {
     switch (action.type) {
+        case 'GET_APPS':
+            return {
+                ...state,
+                apps: action.payload,
+                loading: false
+            }
         case 'GET_APP':
             return {
                 ...state,

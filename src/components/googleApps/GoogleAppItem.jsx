@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
 
-function GoogleAppItem({app: {title,id,name, icon}}) {
+function GoogleAppItem({app: {title, id, name, icon}}) {
     return (
         <div className='card shadow-md compact side bg-base-100'>
             <div className='flex-row items-center space-x-4 card-body'>
@@ -13,7 +13,7 @@ function GoogleAppItem({app: {title,id,name, icon}}) {
                 <div>
                     <h2 className="card-title">{title}</h2>
                     <h3 className="text-base-content text-opacity-80">{name}</h3>
-                    <Link className='text-base-content text-opacity-40' to={`/app/${id}`}>Visit App</Link>
+                    <Link className='text-base-content text-opacity-40' to={`/app/${name}`}>Visit App</Link>
                 </div>
             </div>
 
