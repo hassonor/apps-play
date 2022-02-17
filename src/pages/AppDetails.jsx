@@ -17,7 +17,7 @@ function AppDetails() {
     useEffect(() => {
 
         getApp(params.name)
-    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    }, [])
 
     const {
         title,
@@ -33,11 +33,13 @@ function AppDetails() {
     }
 
     const formatNumber = (num) => {
+
         return num.toLocaleString()
     }
 
     const rating = (number) => {
         let container = [];
+  
         for (let i = 1; i <= 5; i++) {
             if (i <= number) {
                 container.push(

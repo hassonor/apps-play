@@ -5,8 +5,6 @@ import booking_app_metadata from '../../mocks/booking_app_metadata';
 
 const GoogleAppsContext = createContext()
 
-// const GOOGLE_APP_URL = process.env.REACT_APP_GOOGLE_APP_DETAILS_URL
-
 
 export const AppsProvider = ({children}) => {
     const initialState = {
@@ -72,24 +70,6 @@ export const AppsProvider = ({children}) => {
             type: 'GET_APP_DETAILS',
             payload: booking_app_metadata
         })
-
-
-        // With API:
-        // const package_name = name.split('.')[1]
-        //
-        // const response = await fetch(`${GOOGLE_APP_URL}/${package_name}_app.metadata.json`)
-
-        // if (response.status === 404) {
-        //     window.localation = '/notfound'
-        // } else {
-        //
-        //     const data = await response.json()
-        //
-        //     dispatch({
-        //         type: 'GET_APP',
-        //         payload: data
-        //     })
-        // }
 
     }
 
