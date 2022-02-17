@@ -28,11 +28,9 @@ export const AppsProvider = ({children}) => {
 
     const getApp = async (name) => {
         setLoading()
-        console.log(name)
-        const formatted_package = "booking"
-
-
-        const response = await fetch(`${GOOGLE_APP_URL}/apps/${formatted_package}_app.metadata.json`)
+        const package_name = name.split('.')[1]
+        
+        const response = await fetch(`${GOOGLE_APP_URL}/${package_name}_app.metadata.json`)
 
         if (response.status === 404) {
             window.localation = '/notfound'
