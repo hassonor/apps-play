@@ -4,7 +4,7 @@ import AlertContext from "../../context/alert/AlertContext";
 
 function GoogleAppsSearch() {
     const [text, setText] = useState('')
-    const {apps, searchApps, fetchApps} = useContext(GoogleAppsContext);
+    const {searchApps, fetchApps} = useContext(GoogleAppsContext); // eslint-disable-next-line no-unused-vars
 
     const {setAlert} = useContext(AlertContext);
 

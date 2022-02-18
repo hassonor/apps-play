@@ -26,6 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "cy:run": "npm start && cypress run",
     "coverage": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
