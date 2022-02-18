@@ -81,7 +81,7 @@ function AppDetails() {
                     </ul>
                     <Carousel app={app}/>
                     <br/>
-                    <Collapsible className="bg-cyan-700 hover:bg-cyan-600 w-20" trigger="Description">
+                    <Collapsible className="bg-cyan-700 hover:bg-cyan-600 w-20" trigger="Read more">
                         <p>
                             {app.description}
                         </p>
