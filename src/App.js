@@ -1,13 +1,13 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound404 from "./pages/NotFound404";
+import Footer from "./components/layout/Footer/Footer";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import NotFound404 from "./pages/NotFound404/NotFound404";
 import {AppsProvider} from "./context/googleApps/GoogleAppsContext";
 import {AlertProvider} from "./context/alert/AlertContext";
-import Alert from "./components/layout/Alert";
-import AppDetails from "./pages/AppDetails";
+import Alert from "./components/layout/Alert/Alert";
+import AppDetails from "./pages/AppDetails/AppDetails";
 
 
 function App() {

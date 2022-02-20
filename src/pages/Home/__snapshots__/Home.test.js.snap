@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render Home Page 1`] = `
+<Fragment>
+  <GoogleAppsSearch />
+  <GoogleAppsResults />
+</Fragment>
+`;

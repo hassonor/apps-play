@@ -1,4 +1,4 @@
-import {ReactComponent as IronSourceLogo} from '../../assets/IronSource-logo.svg';
+import {ReactComponent as IronSourceLogo} from '../../../assets/IronSource-logo.svg';
 
 function Footer() {
     const currentYear = new Date().getFullYear()

@@ -1,12 +1,12 @@
-import GoogleAppsContext from "../context/googleApps/GoogleAppsContext";
-import {ReactComponent as FullStar} from '../assets/full-star.svg';
-import {ReactComponent as EmptyStar} from '../assets/empty-star.svg';
+import GoogleAppsContext from "../../context/googleApps/GoogleAppsContext";
+import {ReactComponent as FullStar} from '../../assets/full-star.svg';
+import {ReactComponent as EmptyStar} from '../../assets/empty-star.svg';
 import {useContext, useEffect} from "react";
 import {Link} from 'react-router-dom'
 import {useParams} from "react-router-dom";
-import Spinner from "../components/layout/Spinner";
+import Spinner from "../../components/layout/Spinner";
 import {MdOutlineReviews} from "react-icons/md";
-import Carousel from "../components/layout/Carousel";
+import Carousel from "../../components/layout/Carousel";
 import Collapsible from "react-collapsible";
 
 function AppDetails() {
